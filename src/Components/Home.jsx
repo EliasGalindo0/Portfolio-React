@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <div className="home">
-        <h2>Elias Pires Abrão Galindo</h2>
+        <h2 className="name">Elias Pires Abrão Galindo</h2>
         <a
           target="_blank"
           rel="noreferrer"
