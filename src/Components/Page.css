@@ -1,78 +1,112 @@
 @media only screen and (max-width: 600px) {
-  *{
-  margin: 0;
-  padding: 0;
+  * {
+    margin: 0;
+    padding: 0;
   }
 
-  .home{
-  display: flex;
-  justify-self: center;
-  align-content: center;
-  flex-direction: column;
-  max-width: 90%;
-  max-height: 90%;
+  p.about {
+    font-size: 20px;
   }
 
-  .profile-img{
-  width: 150px;
-  height: 150px;
+  .home {
+    display: flex;
+    justify-self: center;
+    align-content: center;
+    flex-direction: column;
+    width: 300px;
+    height: 100%;
+  }
+
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .tech-img {
+    max-width: 50px;
+    max-height: 50px;
   }
 
   p.tech-img {
-  font-size: small;
-  height: 10px;
+    font-size: 11px;
+    height: 10px;
   }
 
-  h2.name{
-  font-size: 20px;
+  h1 {
+    font-size: 18px;
+  }
+
+  h2.name {
+    font-size: 20px;
   }
 }
 
 * {
-  font-family: 'Source Sans Pro', sans-serif;
-  margin:0;
-  padding:0;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-body{
+body {
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
-	font-family:"arial",heletica,sans-serif;
-	font-size:12px;
-    background: #2980b9 url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
-	-webkit-animation: 10s linear 0s normal none infinite animate;
-	-moz-animation: 10s linear 0s normal none infinite animate;
-	-ms-animation: 10s linear 0s normal none infinite animate;
-	-o-animation: 10s linear 0s normal none infinite animate;
-	animation: 10s linear 0s normal none infinite animate;
- 
+  font-family: "arial", heletica, sans-serif;
+  font-size: 12px;
+  background: #2980b9
+    url("https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png")
+    repeat 0 0;
+  -webkit-animation: 10s linear 0s normal none infinite animate;
+  -moz-animation: 10s linear 0s normal none infinite animate;
+  -ms-animation: 10s linear 0s normal none infinite animate;
+  -o-animation: 10s linear 0s normal none infinite animate;
+  animation: 10s linear 0s normal none infinite animate;
 }
- 
+
 @-webkit-keyframes animate {
-	from {background-position:0 0;}
-	to {background-position: 500px 0;}
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 500px 0;
+  }
 }
- 
+
 @-moz-keyframes animate {
-	from {background-position:0 0;}
-	to {background-position: 500px 0;}
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 500px 0;
+  }
 }
- 
+
 @-ms-keyframes animate {
-	from {background-position:0 0;}
-	to {background-position: 500px 0;}
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 500px 0;
+  }
 }
- 
+
 @-o-keyframes animate {
-	from {background-position:0 0;}
-	to {background-position: 500px 0;}
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 500px 0;
+  }
 }
- 
+
 @keyframes animate {
-	from {background-position:0 0;}
-	to {background-position: 500px 0;}
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 500px 0;
+  }
 }
 
 h1 {
@@ -80,17 +114,21 @@ h1 {
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 h1:hover {
   cursor: pointer;
-  transform:scale(1.05);
+  transform: scale(1.05);
 }
 
 h2 {
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   font-weight: 850;
   font-size: 4em;
   width: 100%;
@@ -109,7 +147,8 @@ p {
 
 .profile-img {
   border-radius: 50%;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   margin: 10px;
   max-width: 250px;
   max-height: 250px;
@@ -120,14 +159,16 @@ p {
 }
 
 .home {
-  background-color: #FDFEFB;
+  background-color: #fdfefb;
   text-align: center;
   margin: 150px;
   max-width: 80%;
   max-height: 80%;
   padding: 25px;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .tech-img {
@@ -135,10 +176,12 @@ p {
   justify-content: space-evenly;
   align-items: center;
   align-content: center;
-  background-color: #FDFEFB;
+  background-color: #fdfefb;
   padding: 5px;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   margin: 10px;
   height: 150px;
   width: 150px;
@@ -151,11 +194,11 @@ p.tech-img {
 .skills {
   display: flex;
   flex-wrap: wrap;
-  justify-content:center;
+  justify-content: center;
 }
 
 .card:hover {
-  background-color:  rgba(87,111,230,1);
+  background-color: rgba(87, 111, 230, 1);
 }
 
 .social {
