@@ -10,4 +10,8 @@ export const images = [
   {id:9, name: 'Figma', URL:'https://upload.wikimedia.org/wikipedia/commons/a/ad/Figma-1-logo.png'},
   {id:10, name: 'Trello', URL:'https://toppng.com/uploads/preview/trello-logo-11609379884pqzesvzckp.png'},
   {id:11, name: 'Slack', URL:'https://pngimage.net/wp-content/uploads/2018/06/logo-slack-png-5.png'},
+  {id:12, name: 'Node JS', URL:'https://www.pngitem.com/pimgs/m/168-1680234_nodejs-logo-svg-hd-png-download.png'},
+  {id:13, name: 'Mocha', URL:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIlLmA-y-PRdISRyFv8TooJiAVmIo2Rbj5NqnhyEzJHSinNwz28ktPO5sjG3iV7vPoKKY&usqp=CAU'},
+  {id:14, name: 'Chai', URL:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFgMVV1bmcm8dCSPE6Siajk-Uz2akHCiR9YWOv39XTd3QCfh88_F8W-MnZSgW2AlHSiP4&usqp=CAU'},
+  {id:15, name: 'Express', URL:'https://1.bp.blogspot.com/-jkSmywQ57sA/Wer3KKSqgaI/AAAAAAAACc4/07TexMsBBI4v7WlVKo76YvxM3TvrMxIdwCLcBGAs/s640/express.js.png'}
 ];
