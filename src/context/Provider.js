@@ -5,7 +5,7 @@ function Provider({ children }) {
   const [tech, setTech] = useState([]);
   const [showAbout, setShowAbout] = useState('false');
   const [showRepo, setShowRepo] = useState('false');
-  const [showSocial, setShowSocial] = useState('false');
+  const [showSocial, setShowSocial] = useState('true');
   const [showSkills, setShowSkills] = useState('false');
   
   const toogleAbout = () => {
