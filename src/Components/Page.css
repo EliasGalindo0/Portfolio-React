@@ -198,8 +198,13 @@ p.name {
   justify-content: space-evenly;
 }
 
+.card {
+  padding: 10px;
+}
+
 .card:hover {
   background-color: rgba(87, 111, 230, 1);
+  border-radius: 20px;
 }
 
 .social {
