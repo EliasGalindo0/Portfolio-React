@@ -23,7 +23,7 @@ export default function Repositories() {
                 alt="GitHub"
               />
             </a>
-            <p className="tech-img">GitHub</p>
+            <p className="name">GitHub</p>
           </div>
         </div>
       ) : null}

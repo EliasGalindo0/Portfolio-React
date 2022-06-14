@@ -26,7 +26,7 @@ export default function Skills() {
                 src={tec.URL}
                 alt={tec.name}
               />
-              <p className="tech-img">{ tec.name }</p>
+              <p className="name">{ tec.name }</p>
             </div>
         )
     })}

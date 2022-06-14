@@ -22,7 +22,7 @@ export default function Social() {
               alt='Linkedin'
             />
           </a>
-          <p className="tech-img">Linkedin</p>
+          <p className="name">Linkedin</p>
         </div>
         <div className="card">
           <a
@@ -36,7 +36,7 @@ export default function Social() {
               alt='Instagram'
             />
           </a>
-          <p className="tech-img">Instagram</p>
+          <p className="name">Instagram</p>
         </div>
         <div className="card">
           <a
@@ -50,7 +50,7 @@ export default function Social() {
               alt='Facebook'
             />
           </a>
-          <p className="tech-img">Facebook</p>
+          <p className="name">Facebook</p>
         </div>
       </div>
       : null }

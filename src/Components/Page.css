@@ -28,8 +28,7 @@
   }
 
   p.tech-img {
-    font-size: 11px;
-    height: 10px;
+    font-size: 10px;
   }
 
   h1 {
@@ -173,28 +172,30 @@ p {
 
 .tech-img {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   align-content: center;
   background-color: #fdfefb;
   padding: 5px;
-  border-radius: 10px;
+  border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  margin: 10px;
-  height: 150px;
-  width: 150px;
+  margin: 10px 30px;
+  padding: 5px;
+  height: 80px;
+  width: 80px;
 }
 
-p.tech-img {
+p.name {
   height: 20px;
+  font-size: 1.5em;
 }
 
 .skills {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .card:hover {
