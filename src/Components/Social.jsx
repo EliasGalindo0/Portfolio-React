@@ -52,6 +52,20 @@ export default function Social() {
           </a>
           <p className="name">Facebook</p>
         </div>
+        <div className="card">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="mailto:eliasgalindo@gmail.com"
+          >
+            <img
+              className="tech-img"   
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Logo_Gmail_%282015-2020%29.svg/1200px-Logo_Gmail_%282015-2020%29.svg.png"
+              alt="Gmail"
+            />
+          </a>
+          <p className="name">Gmail</p>
+        </div>
       </div>
       : null }
     </> 

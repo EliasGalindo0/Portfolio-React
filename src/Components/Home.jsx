@@ -1,6 +1,6 @@
 import React from "react";
 import About from "./About";
-// import Header from "./Header";
+import Certificates from "./Certificates";
 import Repositories from "./Repo";
 import Social from "./Social";
 import Skills from "./Skills";
@@ -24,10 +24,10 @@ export default function Home() {
         </a>
         <div className="components">
           <About />
-          {/* <Header /> */}
           <Repositories />
           <Social />
           <Skills />
+          <Certificates />
         </div>
       </div>
           <Footer />
