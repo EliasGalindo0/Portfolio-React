@@ -5,7 +5,7 @@
   }
 
   p.about {
-    font-size: 20px;
+    font-size: 1em;
   }
 
   .home {
@@ -13,7 +13,6 @@
     justify-self: center;
     align-content: center;
     flex-direction: column;
-    width: 300px;
     height: 100%;
   }
 
@@ -23,25 +22,26 @@
   }
 
   .tech-img {
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 40px;
+    max-height: 40px;
   }
 
-  p.tech-img {
-    font-size: 10px;
-  }
+  /* p.tech-img {
+    font-size: 1em;
+  } */
 
   h1 {
-    font-size: 18px;
+    font-size: 1em;
   }
 
   h2.name {
-    font-size: 20px;
+    font-size: 2em;
+    width: 250px;
   }
 
   .certificate {
-    max-width: 150px;
-    max-height: 100px;
+    max-width: 140px;
+    max-height: 90px;
   }
 }
 
@@ -129,15 +129,20 @@ h1:hover {
 }
 
 h2 {
+  display: flex;
+  justify-content: center;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  font-weight: 850;
-  font-size: 4em;
-  width: 100%;
+  font-weight: 800;
+  font-size: 3em;
   margin: 0;
   padding: 5px;
+}
+
+h2.name {
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
 .footer:hover {
@@ -147,6 +152,10 @@ h2 {
 p {
   font-weight: 900;
   font-size: 25px;
+}
+
+p.about {
+  padding: 20px;
 }
 
 .profile-img {
@@ -168,6 +177,7 @@ p {
   margin: 150px;
   max-width: 80%;
   max-height: 80%;
+  /* width: 650px; */
   padding: 25px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
