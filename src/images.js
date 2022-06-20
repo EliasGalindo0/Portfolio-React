@@ -13,5 +13,6 @@ export const images = [
   {id:12, name: 'Node JS', URL:'https://www.pngitem.com/pimgs/m/168-1680234_nodejs-logo-svg-hd-png-download.png'},
   {id:13, name: 'Mocha', URL:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIlLmA-y-PRdISRyFv8TooJiAVmIo2Rbj5NqnhyEzJHSinNwz28ktPO5sjG3iV7vPoKKY&usqp=CAU'},
   {id:14, name: 'Chai', URL:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFgMVV1bmcm8dCSPE6Siajk-Uz2akHCiR9YWOv39XTd3QCfh88_F8W-MnZSgW2AlHSiP4&usqp=CAU'},
-  {id:15, name: 'Express', URL:'https://1.bp.blogspot.com/-jkSmywQ57sA/Wer3KKSqgaI/AAAAAAAACc4/07TexMsBBI4v7WlVKo76YvxM3TvrMxIdwCLcBGAs/s640/express.js.png'}
+  {id:15, name: 'Express', URL:'https://1.bp.blogspot.com/-jkSmywQ57sA/Wer3KKSqgaI/AAAAAAAACc4/07TexMsBBI4v7WlVKo76YvxM3TvrMxIdwCLcBGAs/s640/express.js.png'},
+  {id:16, name: 'Jest', URL:'https://pbs.twimg.com/profile_images/821713465245102080/mMtKIMax_400x400.jpg'}
 ];
