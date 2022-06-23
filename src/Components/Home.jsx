@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import About from "./About";
-import Certificates from "./Certificates";
 import Repositories from "./Repo";
 import Social from "./Social";
 import Skills from "./Skills";
@@ -28,8 +27,7 @@ export default function Home() {
           <Repositories />
           <Social />
           <Skills />
-          <Certificates />
-          <Link to="/projects" > <h1>Projects</h1> </Link>
+          <Link to="/achievements" > <h1>Achievements 🏆</h1> </Link>
           <Footer />
         </div>
         <span>All rights reserved ©</span>

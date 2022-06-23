@@ -4,7 +4,7 @@ export default function Footer() {
   const [isVisible, setVisible] = useState(false);
 
   const toogleVisible = () => {
-    if(window.pageYOffset > 400) {
+    if(window.pageYOffset > 500) {
       setVisible(true);
     } else {
       setVisible(false);

@@ -7,7 +7,7 @@ function Provider({ children }) {
   const [showRepo, setShowRepo] = useState('false');
   const [showSocial, setShowSocial] = useState('false');
   const [showSkills, setShowSkills] = useState('false');
-  const [showCertificate, setCertificate] = useState('false');
+  const [showAchievements, setAchievements] = useState('false');
   
   const toogleAbout = () => {
     setShowAbout(!showAbout);
@@ -25,8 +25,8 @@ function Provider({ children }) {
     setShowSkills(!showSkills);
   };
   
-  const toogleCertificates = () => {
-    setCertificate(!showCertificate);
+  const toogleAchievements = () => {
+    setAchievements(!showAchievements);
   };
 
   const contextValue = {
@@ -36,12 +36,12 @@ function Provider({ children }) {
     showRepo,
     showSocial,
     showSkills,
-    showCertificate,
+    showAchievements,
     toogleAbout,
     toogleRepo,
     toogleSocial,
     toogleSkills,
-    toogleCertificates,
+    toogleAchievements,
   };
 
   return (
