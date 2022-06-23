@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import About from "./About";
 import Certificates from "./Certificates";
 import Repositories from "./Repo";
@@ -28,9 +29,11 @@ export default function Home() {
           <Social />
           <Skills />
           <Certificates />
-        </div>
-      </div>
+          <Link to="/projects" > <h1>Projects</h1> </Link>
           <Footer />
+        </div>
+        <span>All rights reserved ©</span>
+      </div>
     </>
   )
 }

@@ -1,10 +1,24 @@
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 import Home from './Components/Home';
 import Provider from './context/Provider';
+import Projects from "./Pages/Projects"
 
 function App() {
   return (
     <Provider >
-      <Home />
+      <Switch>
+      <Route
+          path="/projects"
+          component={ Projects }
+          exact
+        />
+       <Route
+          path="/Portfolio-React/"
+          component={ Home }
+          exact
+        />
+      </Switch>
     </Provider>
   );
 }
