@@ -7,7 +7,6 @@ function Provider({ children }) {
   const [showRepo, setShowRepo] = useState('false');
   const [showSocial, setShowSocial] = useState('false');
   const [showSkills, setShowSkills] = useState('false');
-  const [showAchievements, setAchievements] = useState('false');
   
   const toogleAbout = () => {
     setShowAbout(!showAbout);
@@ -24,10 +23,13 @@ function Provider({ children }) {
   const toogleSkills = () => {
     setShowSkills(!showSkills);
   };
-  
-  const toogleAchievements = () => {
-    setAchievements(!showAchievements);
-  };
+
+  const resetAllToogles = () => {
+    setShowAbout('false');
+    setShowRepo('false');
+    setShowSkills('false');
+    setShowSocial('false');
+  }
 
   const contextValue = {
     tech,
@@ -36,12 +38,11 @@ function Provider({ children }) {
     showRepo,
     showSocial,
     showSkills,
-    showAchievements,
     toogleAbout,
     toogleRepo,
     toogleSocial,
     toogleSkills,
-    toogleAchievements,
+    resetAllToogles,
   };
 
   return (

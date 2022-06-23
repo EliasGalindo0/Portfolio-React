@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { useContext } from "react";
+import Context from "../context/Context";
 
 export default function Footer() {
   const [isVisible, setVisible] = useState(false);
+  const { resetAllToogles } = useContext(Context);
 
   const toogleVisible = () => {
     if(window.pageYOffset > 500) {
@@ -27,7 +30,7 @@ useEffect(() => {
         top: 0,
         behavior: "smooth",
       });
-      document.location.reload(true);
+      resetAllToogles();
     } 
   }
     >
