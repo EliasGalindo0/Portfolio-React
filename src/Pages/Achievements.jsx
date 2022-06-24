@@ -6,13 +6,31 @@ import unitTests from "../projects/unitTests.png";
 import Trybe from "../images/Trybe.png";
 import TrybeFrontEnd from "../images/TrybeFrontEnd.png";
 import Treinaweb from "../images/Treinaweb.png";
-
+import lessonsLearned from "../projects/lessonsLearned.gif";
+import memeGenerator from "../projects/memeGenerator.gif";
+import misteryLetter from "../projects/misteryLetter.gif";
+import pixelArt from "../projects/pixelArt.gif";
+import playgroundFunction from "../projects/playgroundFunction.png"
 
 export default function Projects() {
   return(
     <div className="home">
-      <h1>Projects</h1>
+      <h1>Projects 🚧</h1>
       <div className="projects">
+      <div>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/EliasGalindo0/Trybe-projects/tree/elias-galindo-lessons-learned"
+            >
+              <img
+                className="project"
+                src={ lessonsLearned }
+                alt="lessonsLearned"
+              />
+            </a>
+            <p className="name">#1 Project</p>
+          </div>
           <div>
             <a
               target="_blank"
@@ -25,7 +43,7 @@ export default function Projects() {
                 alt="Color-Guess"
               />
             </a>
-            <p>Color Guess</p>
+            <p className="name">Color Guess</p>
           </div>
           <div>
             <a
@@ -39,10 +57,67 @@ export default function Projects() {
                 alt="unitTests"
               />
             </a>
-            <p>Unit Tests</p>
+            <p className="name">Unit Tests</p>
+          </div>
+          <div>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/EliasGalindo0/Trybe-projects/tree/elias-galindo-meme-generator-project"
+            >
+              <img
+                className="project"
+                src={ memeGenerator }
+                alt="memeGenerator"
+              />
+            </a>
+            <p className="name">Meme generator</p>
+          </div>
+          <div>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/EliasGalindo0/Trybe-projects/tree/elias-galindo-mistery-letter"
+            >
+              <img
+                className="project"
+                src={ misteryLetter }
+                alt="misteryLetter"
+              />
+            </a>
+            <p className="name">Mistery Letter</p>
+          </div>
+          <div>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/EliasGalindo0/Trybe-projects/tree/elias-galindo-pixels-art"
+            >
+              <img
+                className="project"
+                src={ pixelArt }
+                alt="pixelArt"
+              />
+            </a>
+            <p className="name">Pixels Art</p>
+          </div>
+          <div>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/EliasGalindo0/Trybe-projects/tree/elias-galindo-playground-functions"
+            >
+              <img
+                className="project"
+                src={ playgroundFunction }
+                alt="playgroundFunctions"
+              />
+            </a>
+            <p className="name">Playground Functions</p>
           </div>
         </div>
-      <h1>Certificates</h1>
+
+      <h1>Certificates 📜</h1>
       <div className="certificates">
           <div>
             <a
@@ -56,7 +131,7 @@ export default function Projects() {
                 alt="Trybe"
               />
             </a>
-            <p>Basics</p>
+            <p className="name">Basics</p>
             </div>
           <div>
             <a
@@ -70,7 +145,7 @@ export default function Projects() {
                 alt="Trybe"
               />
             </a>
-            <p>Front-end</p>
+            <p className="name">Front-end</p>
             </div>
             <div>
             <a
@@ -84,7 +159,7 @@ export default function Projects() {
                 alt="Treinaweb"
               />
             </a>
-          <p>TreinaWeb</p>
+          <p className="name">TreinaWeb</p>
           </div>
         </div>
         <div className="return-btn">

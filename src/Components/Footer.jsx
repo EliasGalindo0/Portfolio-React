@@ -27,7 +27,7 @@ useEffect(() => {
     { isVisible ?   <h1
       className="footer"
       onClick={ () => { window.scrollTo({
-        top: 0,
+        top: 100,
         behavior: "smooth",
       });
       resetAllToogles();
