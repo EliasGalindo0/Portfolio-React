@@ -10,7 +10,9 @@ import lessonsLearned from "../projects/lessonsLearned.gif";
 import memeGenerator from "../projects/memeGenerator.gif";
 import misteryLetter from "../projects/misteryLetter.gif";
 import pixelArt from "../projects/pixelArt.gif";
-import playgroundFunction from "../projects/playgroundFunction.png"
+import playgroundFunction from "../projects/playgroundFunction.png";
+import shoppingCart from "../projects/shoppingCart.gif";
+import toDoList from "../projects/toDoList.gif";
 
 export default function Projects() {
   return(
@@ -114,6 +116,34 @@ export default function Projects() {
               />
             </a>
             <p className="name">Playground Functions</p>
+          </div>
+          <div>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/EliasGalindo0/Trybe-projects/tree/elias-galindo-shopping-cart"
+            >
+              <img
+                className="project"
+                src={ shoppingCart }
+                alt="shoppingCart"
+              />
+            </a>
+            <p className="name">Shopping Cart</p>
+          </div>
+          <div>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/EliasGalindo0/Trybe-projects/tree/elias-galindo-todo-list-project"
+            >
+              <img
+                className="project"
+                src={ toDoList }
+                alt="toDoList"
+              />
+            </a>
+            <p className="name">To Do List</p>
           </div>
         </div>
 

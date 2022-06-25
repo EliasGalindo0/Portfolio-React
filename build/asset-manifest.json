@@ -1,9 +1,11 @@
 {
   "files": {
     "main.css": "/Portfolio-React/static/css/main.1e6cbb75.css",
-    "main.js": "/Portfolio-React/static/js/main.a671cf3f.js",
+    "main.js": "/Portfolio-React/static/js/main.4be32bf6.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio-React/static/js/787.1ed0c42c.chunk.js",
+    "static/media/shoppingCart.gif": "/Portfolio-React/static/media/shoppingCart.be0ef7831233c9369522.gif",
     "static/media/colorguess.gif": "/Portfolio-React/static/media/colorguess.0125907c8b4d76e88c41.gif",
+    "static/media/toDoList.gif": "/Portfolio-React/static/media/toDoList.2a0f06504b201b6854de.gif",
     "static/media/Treinaweb.png": "/Portfolio-React/static/media/Treinaweb.ab5e8ce8ff74366da710.png",
     "static/media/memeGenerator.gif": "/Portfolio-React/static/media/memeGenerator.d49bab1a354b6f8c7962.gif",
     "static/media/unitTests.png": "/Portfolio-React/static/media/unitTests.7585e38f5cd81f43e880.png",
@@ -15,11 +17,11 @@
     "static/media/misteryLetter.gif": "/Portfolio-React/static/media/misteryLetter.54b22a252796612d0dd9.gif",
     "index.html": "/Portfolio-React/index.html",
     "main.1e6cbb75.css.map": "/Portfolio-React/static/css/main.1e6cbb75.css.map",
-    "main.a671cf3f.js.map": "/Portfolio-React/static/js/main.a671cf3f.js.map",
+    "main.4be32bf6.js.map": "/Portfolio-React/static/js/main.4be32bf6.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio-React/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1e6cbb75.css",
-    "static/js/main.a671cf3f.js"
+    "static/js/main.4be32bf6.js"
   ]
 }
