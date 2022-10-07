@@ -1,13 +1,15 @@
-import React, { useState } from "react";
-import Context from "./Context";
+/* eslint-disable react-hooks/exhaustive-deps */
+import PropTypes from 'prop-types';
+import React from 'react';
+import Context from './Context';
 
 function Provider({ children }) {
-  const [tech, setTech] = useState([]);
-  const [showAbout, setShowAbout] = useState('false');
-  const [showRepo, setShowRepo] = useState('false');
-  const [showSocial, setShowSocial] = useState('false');
-  const [showSkills, setShowSkills] = useState('false');
-  
+  const [tech, setTech] = React.useState([]);
+  const [showAbout, setShowAbout] = React.useState('false');
+  const [showRepo, setShowRepo] = React.useState('false');
+  const [showSocial, setShowSocial] = React.useState('false');
+  const [showSkills, setShowSkills] = React.useState('false');
+
   const toogleAbout = () => {
     setShowAbout(!showAbout);
   };
@@ -29,9 +31,9 @@ function Provider({ children }) {
     setShowRepo('false');
     setShowSkills('false');
     setShowSocial('false');
-  }
+  };
 
-  const contextValue = {
+  const contextValue = React.useMemo(() => ({
     tech,
     setTech,
     showAbout,
@@ -43,13 +45,25 @@ function Provider({ children }) {
     toogleSocial,
     toogleSkills,
     resetAllToogles,
-  };
+  }), [showAbout,
+    showRepo,
+    showSocial,
+    showSkills,
+    toogleAbout,
+    toogleRepo,
+    toogleSocial,
+    toogleSkills,
+    tech]);
 
   return (
-    <Context.Provider value={contextValue}>
+    <Context.Provider value={ contextValue }>
       {children}
     </Context.Provider>
   );
+}
+
+Provider.propTypes = {
+  children: PropTypes.element.isRequired,
 };
 
 export default Provider;

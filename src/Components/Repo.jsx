@@ -1,12 +1,16 @@
-import React, { useContext } from "react";
-import Context from "../context/Context";
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+import React, { useContext } from 'react';
+import Context from '../context/Context';
 
 export default function Repositories() {
   const { showRepo, toogleRepo } = useContext(Context);
 
   return (
     <>
-      <div onClick={toogleRepo}>
+      <div
+        onClick={ toogleRepo }
+      >
         {showRepo ? <h1>Repositories ⏬</h1> : <h1>Repositories ⏫</h1>}
       </div>
       {!showRepo ? (

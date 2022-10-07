@@ -1,37 +1,39 @@
-import React, { useContext, useEffect } from "react";
-import Context from "../context/Context";
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable react/jsx-indent */
+/* eslint-disable indent */
+import React, { useContext, useEffect } from 'react';
+import Context from '../context/Context';
 import './Page.css';
-import { images } from "../images";
-
+import images from '../data/images';
 
 export default function Skills() {
-  const { tech, setTech, showSkills, toogleSkills } = useContext(Context)
+  const { tech, setTech, showSkills, toogleSkills } = useContext(Context);
   useEffect(() => {
-    const tech = images;
-    setTech(tech);
+    setTech(images);
   }, [setTech]);
-  
-  return(
+
+  return (
     <>
-     <div onClick={toogleSkills}>
+      <div
+        onClick={ toogleSkills }
+      >
         {showSkills ? <h1>Skills ⏬</h1> : <h1>Skills ⏫</h1>}
       </div>
-    { !showSkills ?
-      <div className="skills">
-        {tech.map((tec) => {
-          return (
-            <div className="card" key={tec.id}>
+      { !showSkills
+        ? <div className="skills">
+          {tech.map((tec) => (
+            <div className="card" key={ tec.id }>
               <img
                 className="tech-img"
-                src={tec.URL}
-                alt={tec.name}
+                src={ tec.URL }
+                alt={ tec.name }
               />
               <p className="name">{ tec.name }</p>
             </div>
-        )
-    })}
-    </div>
-    : null }
+          ))}
+          </div>
+        : null }
     </>
   );
 }
