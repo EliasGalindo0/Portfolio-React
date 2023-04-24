@@ -3,7 +3,7 @@ import * as mongoose from "mongoose";
 export type FileDocument = File & Document;
 export declare class File {
     fileName: string;
-    extension: string;
+    linkRepo: string;
     uploadedDate: Date;
     createdBy: User;
 }

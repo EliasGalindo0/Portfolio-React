@@ -5,14 +5,15 @@ import { UserService } from "src/services/user.service";
 
 @Controller('api/v1/user')
 export class UserController {
-  constructor(private readonly userService: UserService,
+  constructor(
+    private readonly userService: UserService,
     private jwtService: JwtService) { }
 
   @Post('/signup')
   async Signup(@Res() response: any, @Body() user: User): Promise<any> {
-    const newUSer = await this.userService.signup(user);
+    const newUser = await this.userService.signup(user);
     return response.status(HttpStatus.CREATED).json({
-      newUSer
+      newUser
     })
   }
   @Post('/signin')

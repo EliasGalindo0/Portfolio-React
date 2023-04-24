@@ -8,7 +8,7 @@ export class File {
   @Prop()
   fileName: string;
   @Prop()
-  extension: string;
+  linkRepo: string;
   @Prop({ default: Date.now() })
   uploadedDate: Date;
   @Prop({ type: mongoose.Schema.Types.ObjectId, ref: "User" })

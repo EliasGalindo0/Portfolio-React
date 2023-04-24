@@ -23,9 +23,9 @@ let UserController = class UserController {
         this.jwtService = jwtService;
     }
     async Signup(response, user) {
-        const newUSer = await this.userService.signup(user);
+        const newUser = await this.userService.signup(user);
         return response.status(common_1.HttpStatus.CREATED).json({
-            newUSer
+            newUser
         });
     }
     async SignIn(response, user) {
