@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common';
+import { MiddlewareConsumer, Module, RequestMethod } from '@nestjs/common';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { ConfigModule } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
@@ -15,6 +15,7 @@ import { ImageService } from './services/image.service';
 import { UserService } from './services/user.service';
 import { User, UserSchema } from './model/user.schema';
 import { Image, ImageSchema } from './model/image.schema';
+import { isAuthenticated } from './app.middleware';
 
 @Module({
   imports: [
@@ -40,4 +41,13 @@ import { Image, ImageSchema } from './model/image.schema';
   controllers: [AppController, ImageController, UserController],
   providers: [AppService, ImageService, UserService],
 })
-export class AppModule {}
+export class AppModule {
+  configure(consumer: MiddlewareConsumer) {
+    consumer
+      .apply(isAuthenticated)
+      .exclude({
+        path: '/image/:id', method: RequestMethod.GET
+      })
+      .forRoutes(ImageController)
+  }
+}

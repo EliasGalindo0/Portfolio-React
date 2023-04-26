@@ -23,7 +23,16 @@ const image_service_1 = require("./services/image.service");
 const user_service_1 = require("./services/user.service");
 const user_schema_1 = require("./model/user.schema");
 const image_schema_1 = require("./model/image.schema");
+const app_middleware_1 = require("./app.middleware");
 let AppModule = class AppModule {
+    configure(consumer) {
+        consumer
+            .apply(app_middleware_1.isAuthenticated)
+            .exclude({
+            path: '/image/:id', method: common_1.RequestMethod.GET
+        })
+            .forRoutes(image_controller_1.ImageController);
+    }
 };
 AppModule = __decorate([
     (0, common_1.Module)({
