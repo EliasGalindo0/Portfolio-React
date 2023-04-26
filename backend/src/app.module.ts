@@ -1,6 +1,5 @@
 import { MiddlewareConsumer, Module, RequestMethod } from '@nestjs/common';
 import { ServeStaticModule } from '@nestjs/serve-static';
-import { ConfigModule } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
@@ -46,7 +45,7 @@ export class AppModule {
     consumer
       .apply(isAuthenticated)
       .exclude({
-        path: '/image/:id', method: RequestMethod.GET
+        path: '/api/v1/image/:id', method: RequestMethod.GET
       })
       .forRoutes(ImageController)
   }

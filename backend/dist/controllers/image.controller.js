@@ -88,7 +88,7 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], ImageController.prototype, "delete", null);
 ImageController = __decorate([
-    (0, common_1.Controller)('/image'),
+    (0, common_1.Controller)('/api/v1/image'),
     __metadata("design:paramtypes", [image_service_1.ImageService])
 ], ImageController);
 exports.ImageController = ImageController;

@@ -3,7 +3,7 @@ import { FileFieldsInterceptor } from "@nestjs/platform-express";
 import { Image } from "src/model/image.schema";
 import { ImageService } from "src/services/image.service";
 
-@Controller('/image')
+@Controller('/api/v1/image')
 export class ImageController {
   constructor(private readonly imageService: ImageService) { }
   
