@@ -11,12 +11,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
-var _a;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ImageController = void 0;
 const common_1 = require("@nestjs/common");
 const platform_express_1 = require("@nestjs/platform-express");
 const image_schema_1 = require("../model/image.schema");
+const image_service_1 = require("../services/image.service");
 let ImageController = class ImageController {
     constructor(imageService) {
         this.imageService = imageService;
@@ -34,7 +34,7 @@ let ImageController = class ImageController {
         return response.status(common_1.HttpStatus.OK).json(updatedImage);
     }
     async delete(response, id) {
-        await this.imageService.delete(id);
+        await this.imageService.deleteImage(id);
         return response.status(common_1.HttpStatus.OK).json({ user: null });
     }
 };
@@ -77,7 +77,7 @@ __decorate([
 ], ImageController.prototype, "delete", null);
 ImageController = __decorate([
     (0, common_1.Controller)('/api/image'),
-    __metadata("design:paramtypes", [typeof (_a = typeof ImageService !== "undefined" && ImageService) === "function" ? _a : Object])
+    __metadata("design:paramtypes", [image_service_1.ImageService])
 ], ImageController);
 exports.ImageController = ImageController;
 //# sourceMappingURL=image.controller.js.map

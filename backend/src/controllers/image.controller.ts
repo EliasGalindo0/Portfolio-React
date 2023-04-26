@@ -1,6 +1,7 @@
 import { Body, Controller, Delete, Get, HttpStatus, Param, Post, Put, Query, Req, Res, UploadedFiles, UseInterceptors } from "@nestjs/common";
 import { FileFieldsInterceptor } from "@nestjs/platform-express";
 import { Image } from "src/model/image.schema";
+import { ImageService } from "src/services/image.service";
 
 @Controller('/api/image')
 export class ImageController {
@@ -33,7 +34,7 @@ export class ImageController {
 
   @Delete('/:id')
   async delete(@Res() response: any, @Param('id') id: any): Promise<void> {
-    await this.imageService.delete(id);
+    await this.imageService.deleteImage(id);
 
     return response.status(HttpStatus.OK).json({ user: null })
   }
