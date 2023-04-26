@@ -25,6 +25,12 @@ export class ImageController {
     return await this.imageService.readImage(id);
   }
 
+  @Get('/:id')
+  async open(@Param('id') id: any, @Res() response: any, @Req() request: any): Promise<void> {
+
+    return await this.imageService.openImage(id, response, request);
+  }
+
   @Put('/:id')
   async update(@Res() response: any, @Param('id') id: any, @Body() image: Image): Promise<any> {
     const updatedImage = await this.imageService.updateImage(id, image);

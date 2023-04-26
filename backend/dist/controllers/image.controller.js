@@ -29,6 +29,9 @@ let ImageController = class ImageController {
     async read(id) {
         return await this.imageService.readImage(id);
     }
+    async open(id, response, request) {
+        return await this.imageService.openImage(id, response, request);
+    }
     async update(response, id, image) {
         const updatedImage = await this.imageService.updateImage(id, image);
         return response.status(common_1.HttpStatus.OK).json(updatedImage);
@@ -58,6 +61,15 @@ __decorate([
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
 ], ImageController.prototype, "read", null);
+__decorate([
+    (0, common_1.Get)('/:id'),
+    __param(0, (0, common_1.Param)('id')),
+    __param(1, (0, common_1.Res)()),
+    __param(2, (0, common_1.Req)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object, Object, Object]),
+    __metadata("design:returntype", Promise)
+], ImageController.prototype, "open", null);
 __decorate([
     (0, common_1.Put)('/:id'),
     __param(0, (0, common_1.Res)()),

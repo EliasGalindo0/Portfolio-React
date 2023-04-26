@@ -16,6 +16,8 @@ exports.ImageService = void 0;
 const common_1 = require("@nestjs/common");
 const mongoose_1 = require("@nestjs/mongoose");
 const mongoose_2 = require("mongoose");
+const fs_1 = require("fs");
+const path_1 = require("path");
 const image_schema_1 = require("../model/image.schema");
 let ImageService = class ImageService {
     constructor(imageModel) {
@@ -26,11 +28,37 @@ let ImageService = class ImageService {
         return newImage.save();
     }
     async readImage(id) {
-        return;
+        if (id.id) {
+            return this.imageModel.findOne({ id: id.id }).populate("createdBy").exec();
+        }
+        return this.imageModel.find().populate("createdBy").exec();
+    }
+    async openImage(id, response, request) {
+        try {
+            const data = await this.imageModel.findOne({ _id: id });
+            if (!data) {
+                throw new common_1.NotFoundException(null, "No image found");
+            }
+            const { file } = request.headers;
+            if (file) {
+                const { fileName } = data;
+                const imageStream = (0, fs_1.createReadStream)((0, path_1.join)(process.cwd(), `./public/${fileName}`));
+                imageStream.pipe(response);
+            }
+            else {
+                throw new common_1.NotFoundException(null, 'size not found');
+            }
+        }
+        catch (e) {
+            console.error(e);
+            throw new common_1.ServiceUnavailableException();
+        }
     }
     async updateImage(id, image) {
+        return await this.imageModel.findByIdAndUpdate(id, image, { new: true });
     }
     async deleteImage(id) {
+        return await this.imageModel.findByIdAndDelete(id);
     }
 };
 ImageService = __decorate([

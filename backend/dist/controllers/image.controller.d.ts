@@ -8,6 +8,7 @@ export declare class ImageController {
         image?: Express.Multer.File[];
     }): Promise<void>;
     read(id: any): Promise<Object>;
+    open(id: any, response: any, request: any): Promise<void>;
     update(response: any, id: any, image: Image): Promise<any>;
     delete(response: any, id: any): Promise<void>;
 }
