@@ -9,31 +9,31 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.FileSchema = exports.File = void 0;
+exports.ImageSchema = exports.Image = void 0;
 const mongoose_1 = require("@nestjs/mongoose");
 const user_schema_1 = require("./user.schema");
 const mongoose = require("mongoose");
-let File = class File {
+let Image = class Image {
 };
 __decorate([
     (0, mongoose_1.Prop)(),
     __metadata("design:type", String)
-], File.prototype, "fileName", void 0);
+], Image.prototype, "fileName", void 0);
 __decorate([
     (0, mongoose_1.Prop)(),
     __metadata("design:type", String)
-], File.prototype, "linkRepo", void 0);
+], Image.prototype, "linkRepo", void 0);
 __decorate([
     (0, mongoose_1.Prop)({ default: Date.now() }),
     __metadata("design:type", Date)
-], File.prototype, "uploadedDate", void 0);
+], Image.prototype, "uploadedDate", void 0);
 __decorate([
     (0, mongoose_1.Prop)({ type: mongoose.Schema.Types.ObjectId, ref: "User" }),
     __metadata("design:type", user_schema_1.User)
-], File.prototype, "createdBy", void 0);
-File = __decorate([
+], Image.prototype, "createdBy", void 0);
+Image = __decorate([
     (0, mongoose_1.Schema)()
-], File);
-exports.File = File;
-exports.FileSchema = mongoose_1.SchemaFactory.createForClass(File);
+], Image);
+exports.Image = Image;
+exports.ImageSchema = mongoose_1.SchemaFactory.createForClass(Image);
 //# sourceMappingURL=image.schema.js.map

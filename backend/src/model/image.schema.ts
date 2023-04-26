@@ -2,9 +2,9 @@ import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
 import { User } from "./user.schema";
 import * as mongoose from "mongoose";
 
-export type FileDocument = File & Document;
+export type ImageDocument = Image & Document;
 @Schema()
-export class File {
+export class Image {
   @Prop()
   fileName: string;
   @Prop()
@@ -15,4 +15,4 @@ export class File {
   createdBy: User;
 }
 
-export const FileSchema = SchemaFactory.createForClass(File);
+export const ImageSchema = SchemaFactory.createForClass(Image);

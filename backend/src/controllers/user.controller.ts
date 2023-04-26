@@ -3,7 +3,7 @@ import { JwtService } from '@nestjs/jwt';
 import { User } from "src/model/user.schema";
 import { UserService } from "src/services/user.service";
 
-@Controller('api/v1/user')
+@Controller('/api/user')
 export class UserController {
   constructor(
     private readonly userService: UserService,
@@ -11,14 +11,14 @@ export class UserController {
 
   @Post('/signup')
   async Signup(@Res() response: any, @Body() user: User): Promise<any> {
-    const newUser = await this.userService.signup(user);
+    const newUser: User = await this.userService.signup(user);
     return response.status(HttpStatus.CREATED).json({
       newUser
     })
   }
   @Post('/signin')
   async SignIn(@Res() response: any, @Body() user: User): Promise<any> {
-    const token = await this.userService.signin(user, this.jwtService);
+    const token: any = await this.userService.signin(user, this.jwtService);
     return response.status(HttpStatus.OK).json(token)
   }
 }
