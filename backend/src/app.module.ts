@@ -9,10 +9,18 @@ import { join } from 'path';
 import { MulterModule } from '@nestjs/platform-express';
 import { diskStorage } from 'multer';
 import { v4 as uuidv4 } from 'uuid';
+import { ImageController } from './controllers/image.controller';
+import { UserController } from './controllers/user.controller';
+import { ImageService } from './services/image.service';
+import { UserService } from './services/user.service';
+import { User, UserSchema } from './model/user.schema';
+import { Image, ImageSchema } from './model/image.schema';
 
 @Module({
   imports: [
     MongooseModule.forRoot('mongodb://localhost:27017/Stream'),
+    MongooseModule.forFeature([{ name: User.name, schema: UserSchema }]),
+    MongooseModule.forFeature([{ name: Image.name, schema: ImageSchema }]),
     MulterModule.register({
       storage: diskStorage({
         destination: './public',
@@ -22,9 +30,6 @@ import { v4 as uuidv4 } from 'uuid';
         }
       })
     }),
-    ConfigModule.forRoot({
-      isGlobal: true,
-    }), 
     JwtModule.register({
       secret: process.env.SECRET,
     }), 
@@ -32,7 +37,7 @@ import { v4 as uuidv4 } from 'uuid';
       rootPath: join(__dirname, '..', 'public'),
     })
   ],
-  controllers: [AppController],
-  providers: [AppService],
+  controllers: [AppController, ImageController, UserController],
+  providers: [AppService, ImageService, UserService],
 })
 export class AppModule {}

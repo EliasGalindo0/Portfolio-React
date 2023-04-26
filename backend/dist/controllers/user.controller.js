@@ -50,7 +50,7 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], UserController.prototype, "SignIn", null);
 UserController = __decorate([
-    (0, common_1.Controller)('/api/user'),
+    (0, common_1.Controller)('/user'),
     __metadata("design:paramtypes", [user_service_1.UserService,
         jwt_1.JwtService])
 ], UserController);

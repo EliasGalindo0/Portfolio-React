@@ -9,7 +9,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.AppModule = void 0;
 const common_1 = require("@nestjs/common");
 const serve_static_1 = require("@nestjs/serve-static");
-const config_1 = require("@nestjs/config");
 const mongoose_1 = require("@nestjs/mongoose");
 const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
@@ -18,12 +17,20 @@ const path_1 = require("path");
 const platform_express_1 = require("@nestjs/platform-express");
 const multer_1 = require("multer");
 const uuid_1 = require("uuid");
+const image_controller_1 = require("./controllers/image.controller");
+const user_controller_1 = require("./controllers/user.controller");
+const image_service_1 = require("./services/image.service");
+const user_service_1 = require("./services/user.service");
+const user_schema_1 = require("./model/user.schema");
+const image_schema_1 = require("./model/image.schema");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     (0, common_1.Module)({
         imports: [
             mongoose_1.MongooseModule.forRoot('mongodb://localhost:27017/Stream'),
+            mongoose_1.MongooseModule.forFeature([{ name: user_schema_1.User.name, schema: user_schema_1.UserSchema }]),
+            mongoose_1.MongooseModule.forFeature([{ name: image_schema_1.Image.name, schema: image_schema_1.ImageSchema }]),
             platform_express_1.MulterModule.register({
                 storage: (0, multer_1.diskStorage)({
                     destination: './public',
@@ -33,9 +40,6 @@ AppModule = __decorate([
                     }
                 })
             }),
-            config_1.ConfigModule.forRoot({
-                isGlobal: true,
-            }),
             jwt_1.JwtModule.register({
                 secret: process.env.SECRET,
             }),
@@ -43,8 +47,8 @@ AppModule = __decorate([
                 rootPath: (0, path_1.join)(__dirname, '..', 'public'),
             })
         ],
-        controllers: [app_controller_1.AppController],
-        providers: [app_service_1.AppService],
+        controllers: [app_controller_1.AppController, image_controller_1.ImageController, user_controller_1.UserController],
+        providers: [app_service_1.AppService, image_service_1.ImageService, user_service_1.UserService],
     })
 ], AppModule);
 exports.AppModule = AppModule;
