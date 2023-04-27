@@ -4,6 +4,7 @@ import Home from './Pages/Home';
 import Provider from './context/Provider';
 import Achievements from './Pages/Achievements';
 import Login from './Pages/Login';
+import SignUp from './Pages/SignUp';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/achievements" element={ <Achievements /> } exact />
         <Route path="/signin" element={ <Login /> } exact />
         <Route path="/Portfolio-React/" element={ <Home /> } exact />
+        <Route path="/signup" element={ <SignUp /> } exact />
       </Routes>
     </Provider>
   );

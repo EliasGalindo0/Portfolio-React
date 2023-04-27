@@ -37,7 +37,7 @@ let AppModule = class AppModule {
 AppModule = __decorate([
     (0, common_1.Module)({
         imports: [
-            mongoose_1.MongooseModule.forRoot('mongodb://localhost:27017/Stream'),
+            mongoose_1.MongooseModule.forRoot('mongodb://localhost:27017/Portfolio-React'),
             mongoose_1.MongooseModule.forFeature([{ name: user_schema_1.User.name, schema: user_schema_1.UserSchema }]),
             mongoose_1.MongooseModule.forFeature([{ name: image_schema_1.Image.name, schema: image_schema_1.ImageSchema }]),
             platform_express_1.MulterModule.register({
