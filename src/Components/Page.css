@@ -42,7 +42,7 @@
 }
 
 * {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -52,10 +52,10 @@ body {
   justify-content: center;
   align-items: center;
   align-content: center;
-  font-family: "arial", heletica, sans-serif;
+  font-family: 'arial', heletica, sans-serif;
   font-size: 12px;
   background: #2980b9
-    url("https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png")
+    url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png')
     repeat 0 0;
   -webkit-animation: 10s linear 0s normal none infinite animate;
   -moz-animation: 10s linear 0s normal none infinite animate;
@@ -295,6 +295,18 @@ span {
   margin: 10px;
   padding: 4px;
   border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.form {
+  background-color: #fdfefb;
+  text-align: center;
+  /* margin: 150px; */
+  max-width: 80%;
+  max-height: 80%;
+  padding: 25px;
+  border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;

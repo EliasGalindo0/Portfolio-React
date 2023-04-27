@@ -31,6 +31,10 @@ export default function Home() {
           <h1>Achievements 🏆</h1>
           {' '}
         </Link>
+        <Link to="/signin">
+          {' '}
+          <h1>Login</h1>
+        </Link>
         <Footer />
       </main>
       <span>All rights reserved ©</span>
