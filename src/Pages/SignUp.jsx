@@ -8,16 +8,14 @@ export default function SignUp() {
     event.preventDefault();
     const data = new FormData(document.querySelector('#signup-form'));
     const form = {
-      fullName: data.get('name'),
       email: data.get('email'),
       password: data.get('password'),
     };
-    await axios.post('http://localhost:3001/api/v1/user/signup', form);
-    navigate('/');
+    await axios.post('http://localhost:3000/api/v1/user/signup', form);
+    navigate('/signin');
   };
   return (
     <form className="form" id="signup-form">
-      <input type="name" name="name" placeholder="Full Name" required />
       <input type="email" name="email" placeholder="Email" required />
       <input type="password" name="password" placeholder="Password" required />
       <button type="submit" onClick={ handleSubmit }>Register</button>

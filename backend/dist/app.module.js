@@ -10,8 +10,6 @@ exports.AppModule = void 0;
 const common_1 = require("@nestjs/common");
 const serve_static_1 = require("@nestjs/serve-static");
 const mongoose_1 = require("@nestjs/mongoose");
-const app_controller_1 = require("./app.controller");
-const app_service_1 = require("./app.service");
 const jwt_1 = require("@nestjs/jwt");
 const path_1 = require("path");
 const platform_express_1 = require("@nestjs/platform-express");
@@ -53,11 +51,11 @@ AppModule = __decorate([
                 secret: process.env.SECRET,
             }),
             serve_static_1.ServeStaticModule.forRoot({
-                rootPath: (0, path_1.join)(__dirname, '..', 'public'),
+                rootPath: (0, path_1.join)('*', '.', 'public'),
             })
         ],
-        controllers: [app_controller_1.AppController, image_controller_1.ImageController, user_controller_1.UserController],
-        providers: [app_service_1.AppService, image_service_1.ImageService, user_service_1.UserService],
+        controllers: [image_controller_1.ImageController, user_controller_1.UserController],
+        providers: [image_service_1.ImageService, user_service_1.UserService],
     })
 ], AppModule);
 exports.AppModule = AppModule;

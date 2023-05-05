@@ -1,8 +1,6 @@
 import { MiddlewareConsumer, Module, RequestMethod } from '@nestjs/common';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { MongooseModule } from '@nestjs/mongoose';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import { JwtModule } from '@nestjs/jwt';
 import { join } from 'path';
 import { MulterModule } from '@nestjs/platform-express';
@@ -34,11 +32,11 @@ import { isAuthenticated } from './app.middleware';
       secret: process.env.SECRET,
     }), 
     ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '..', 'public'),
+      rootPath: join('*', '.', 'public'),
     })
   ],
-  controllers: [AppController, ImageController, UserController],
-  providers: [AppService, ImageService, UserService],
+  controllers: [ImageController, UserController],
+  providers: [ImageService, UserService],
 })
 export class AppModule {
   configure(consumer: MiddlewareConsumer) {

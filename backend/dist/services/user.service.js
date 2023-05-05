@@ -26,7 +26,6 @@ let UserService = class UserService {
         const salt = await bcrypt.genSalt();
         const hash = await bcrypt.hash(user.password, salt);
         const reqBody = {
-            fullname: user.fullName,
             email: user.email,
             password: hash
         };
@@ -43,9 +42,8 @@ let UserService = class UserService {
                     token: jwt.sign(payload),
                 };
             }
-            return new common_1.HttpException('Incorrect name or password', common_1.HttpStatus.UNAUTHORIZED);
+            return new common_1.HttpException('Incorrect username or password', common_1.HttpStatus.UNAUTHORIZED);
         }
-        return new common_1.HttpException('Invalid token', common_1.HttpStatus.UNAUTHORIZED);
     }
     async getOne(email) {
         return await this.userModel.findOne({ email }).exec();

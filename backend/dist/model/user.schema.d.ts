@@ -25,7 +25,6 @@
 /// <reference types="mongoose/types/inferschematype" />
 export type UserDocument = User & Document;
 export declare class User {
-    fullName: string;
     email: string;
     password: string;
     createdAt: Date;
