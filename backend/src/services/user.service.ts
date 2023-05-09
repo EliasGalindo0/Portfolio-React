@@ -36,7 +36,7 @@ export class UserService {
     // return new HttpException('Incorrect email or password', HttpStatus.UNAUTHORIZED)
 }
 
-  async getOne(email): Promise<User> {
-    return await this.userModel.findOne({ email }).exec();
+  async getOne(email, password): Promise<User> {
+    return await this.userModel.findOne({ email, password }).exec();
   }
 };

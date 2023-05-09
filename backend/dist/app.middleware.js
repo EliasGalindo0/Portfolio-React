@@ -23,7 +23,7 @@ let isAuthenticated = class isAuthenticated {
             if (req.headers.authorization && req.headers.authorization.startsWith('Bearer')) {
                 const token = req.headers.authorization.split(' ')[1];
                 const decoded = await this.jwt.verify(token);
-                const user = await this.userService.getOne(decoded.email);
+                const user = await this.userService.getOne(decoded.email, decoded.password);
                 if (user) {
                     req.user = user;
                     next();

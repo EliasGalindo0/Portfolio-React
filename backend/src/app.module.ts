@@ -13,6 +13,7 @@ import { UserService } from './services/user.service';
 import { User, UserSchema } from './model/user.schema';
 import { Image, ImageSchema } from './model/image.schema';
 import { isAuthenticated } from './app.middleware';
+require("dotenv").config();
 
 @Module({
   imports: [
@@ -29,8 +30,9 @@ import { isAuthenticated } from './app.middleware';
       })
     }),
     JwtModule.register({
-      secret: process.env.SECRET,
+      secret: " " + process.env.SECRET,
     }), 
+    
     ServeStaticModule.forRoot({
       rootPath: join('*', '.', 'public'),
     })
@@ -41,10 +43,10 @@ import { isAuthenticated } from './app.middleware';
 export class AppModule {
   configure(consumer: MiddlewareConsumer) {
     consumer
-      .apply(isAuthenticated)
-      .exclude({
-        path: '/api/v1/image/:id', method: RequestMethod.GET
-      })
-      .forRoutes(ImageController)
+    .apply(isAuthenticated)
+    .exclude({
+      path: '/api/v1/image/:id', method: RequestMethod.GET
+    })
+    .forRoutes(ImageController)
   }
 }

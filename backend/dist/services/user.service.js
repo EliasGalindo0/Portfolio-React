@@ -45,8 +45,8 @@ let UserService = class UserService {
             return new common_1.HttpException('Incorrect username or password', common_1.HttpStatus.UNAUTHORIZED);
         }
     }
-    async getOne(email) {
-        return await this.userModel.findOne({ email }).exec();
+    async getOne(email, password) {
+        return await this.userModel.findOne({ email, password }).exec();
     }
 };
 UserService = __decorate([

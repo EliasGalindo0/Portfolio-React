@@ -6,5 +6,5 @@ export declare class UserService {
     constructor(userModel: Model<UserDocument>);
     signup(user: User): Promise<User>;
     signin(user: User, jwt: JwtService): Promise<any>;
-    getOne(email: any): Promise<User>;
+    getOne(email: any, password: any): Promise<User>;
 }

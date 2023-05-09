@@ -22,6 +22,7 @@ const user_service_1 = require("./services/user.service");
 const user_schema_1 = require("./model/user.schema");
 const image_schema_1 = require("./model/image.schema");
 const app_middleware_1 = require("./app.middleware");
+require("dotenv").config();
 let AppModule = class AppModule {
     configure(consumer) {
         consumer
@@ -48,7 +49,7 @@ AppModule = __decorate([
                 })
             }),
             jwt_1.JwtModule.register({
-                secret: process.env.SECRET,
+                secret: " " + process.env.SECRET,
             }),
             serve_static_1.ServeStaticModule.forRoot({
                 rootPath: (0, path_1.join)('*', '.', 'public'),
