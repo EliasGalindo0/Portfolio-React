@@ -27,9 +27,7 @@ let AppModule = class AppModule {
     configure(consumer) {
         consumer
             .apply(app_middleware_1.isAuthenticated)
-            .exclude({
-            path: '/api/v1/image/:id', method: common_1.RequestMethod.GET
-        })
+            .exclude({ path: '/image', method: common_1.RequestMethod.GET }, { path: '/user', method: common_1.RequestMethod.POST })
             .forRoutes(image_controller_1.ImageController);
     }
 };

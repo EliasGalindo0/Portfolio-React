@@ -18,12 +18,12 @@ let isAuthenticated = class isAuthenticated {
         this.jwt = jwt;
         this.userService = userService;
     }
-    async use(req, res, next) {
+    async use(req, _res, next) {
         try {
             if (req.headers.authorization && req.headers.authorization.startsWith('Bearer')) {
                 const token = req.headers.authorization.split(' ')[1];
                 const decoded = await this.jwt.verify(token);
-                const user = await this.userService.getOne(decoded.email, decoded.password);
+                const user = await this.userService.getOne(decoded.email);
                 if (user) {
                     req.user = user;
                     next();
@@ -36,8 +36,8 @@ let isAuthenticated = class isAuthenticated {
                 throw new common_1.HttpException('No token found', common_1.HttpStatus.NOT_FOUND);
             }
         }
-        catch (_a) {
-            throw new common_1.HttpException('Unauthorized', common_1.HttpStatus.UNAUTHORIZED);
+        catch (Error) {
+            throw new common_1.HttpException(Error.message, common_1.HttpStatus.UNAUTHORIZED);
         }
     }
 };

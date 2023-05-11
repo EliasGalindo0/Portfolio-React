@@ -7,4 +7,5 @@ export declare class UserController {
     constructor(userService: UserService, jwtService: JwtService);
     Signup(response: any, user: User): Promise<any>;
     SignIn(response: any, user: User): Promise<any>;
+    getUser(id: any, response: any): Promise<any>;
 }

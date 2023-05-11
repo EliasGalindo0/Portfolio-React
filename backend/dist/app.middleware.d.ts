@@ -9,6 +9,6 @@ export declare class isAuthenticated implements NestMiddleware {
     private readonly jwt;
     private readonly userService;
     constructor(jwt: JwtService, userService: UserService);
-    use(req: UserRequest, res: Response, next: NextFunction): Promise<void>;
+    use(req: UserRequest, _res: Response, next: NextFunction): Promise<void>;
 }
 export {};

@@ -26,6 +26,8 @@ let UserService = class UserService {
         const salt = await bcrypt.genSalt();
         const hash = await bcrypt.hash(user.password, salt);
         const reqBody = {
+            username: user.username,
+            role: user.role,
             email: user.email,
             password: hash
         };
@@ -33,20 +35,25 @@ let UserService = class UserService {
         return newUser.save();
     }
     async signin(user, jwt) {
-        const foundUser = await this.userModel.findOne({ email: user.email }).exec();
+        const { email, password } = user;
+        const foundUser = await this.userModel.findOne({ email }).exec();
         if (foundUser) {
-            const { password } = foundUser;
-            if (bcrypt.compare(user.password, password)) {
-                const payload = { email: user.email };
+            const verified = await bcrypt.compare(password, foundUser.password);
+            if (verified) {
+                const payload = { email: foundUser.email, password: foundUser.password };
                 return {
                     token: jwt.sign(payload),
                 };
             }
             return new common_1.HttpException('Incorrect username or password', common_1.HttpStatus.UNAUTHORIZED);
         }
+        return new common_1.HttpException('User Not found', common_1.HttpStatus.UNAUTHORIZED);
     }
-    async getOne(email, password) {
-        return await this.userModel.findOne({ email, password }).exec();
+    async getOne(email) {
+        return await this.userModel.findOne({ email }).exec();
+    }
+    async findOne(id) {
+        return await this.userModel.findOne({ id }).exec();
     }
 };
 UserService = __decorate([

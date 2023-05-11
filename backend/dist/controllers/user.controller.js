@@ -23,14 +23,38 @@ let UserController = class UserController {
         this.jwtService = jwtService;
     }
     async Signup(response, user) {
-        const newUser = await this.userService.signup(user);
-        return response.status(common_1.HttpStatus.CREATED).json({
-            newUser
-        });
+        try {
+            const newUser = await this.userService.signup(user);
+            return response.status(common_1.HttpStatus.CREATED).json({
+                newUser
+            });
+        }
+        catch (error) {
+            return error.status
+                ? response.status(error.status).json({ message: error.message })
+                : response.status(500).json({ message: error.message });
+        }
     }
     async SignIn(response, user) {
-        const token = await this.userService.signin(user, this.jwtService);
-        return response.status(common_1.HttpStatus.OK).json(token);
+        try {
+            const token = await this.userService.signin(user, this.jwtService);
+            return response.status(common_1.HttpStatus.OK).json(token);
+        }
+        catch (error) {
+            return error.status
+                ? response.status(error.status).json({ message: error.message })
+                : response.status(500).json({ message: error.message });
+        }
+    }
+    async getUser(id, response) {
+        try {
+            return await this.userService.findOne(id);
+        }
+        catch (error) {
+            return error.status
+                ? response.status(error.status).json({ message: error.message })
+                : response.status(500).json({ message: error.message });
+        }
     }
 };
 __decorate([
@@ -49,6 +73,14 @@ __decorate([
     __metadata("design:paramtypes", [Object, user_schema_1.User]),
     __metadata("design:returntype", Promise)
 ], UserController.prototype, "SignIn", null);
+__decorate([
+    (0, common_1.Get)('/users:id'),
+    __param(0, (0, common_1.Query)()),
+    __param(1, (0, common_1.Res)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object, Object]),
+    __metadata("design:returntype", Promise)
+], UserController.prototype, "getUser", null);
 UserController = __decorate([
     (0, common_1.Controller)('/api/v1/user'),
     __metadata("design:paramtypes", [user_service_1.UserService,
