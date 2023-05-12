@@ -15,11 +15,8 @@ export default function About() {
       </div>
       { !showAbout ? (
         <p className="about">
-          I love technology. I decided to study web development
-          in transition of a lawyer career.
-          At the moment I`m studying at Trybe School of Technology,
-          where I learned front-end (HTML, CSS, Javascript, React, Redux and Context API).
-          I`m learning back-end, Node JS, MySQL and Docker so far.
+          I love technology. I`m a full stack web developer and currently
+          I`m studying Software Engineering.
           I`m 35 years old and I live in Presidente Prudente, São Paulo, Brazil.
         </p>
       ) : null}
