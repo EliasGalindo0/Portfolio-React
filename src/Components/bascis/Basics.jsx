@@ -4,7 +4,7 @@ import projects from '../../data/projects';
 export default function Basics() {
   return (
     <>
-      <h1>Basics 🚧</h1>
+      <h1>Web Fundamentals Projects 🚧</h1>
       <div className="projects">
         {projects.map((project, index) => (
           <div key={ index }>

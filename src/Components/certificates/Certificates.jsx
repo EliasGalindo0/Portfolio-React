@@ -15,7 +15,7 @@ export default function Certificates() {
             >
               <img
                 className="certificate"
-                src={ project.image }
+                src={ project.src }
                 alt="lessonsLearned"
               />
             </a>
