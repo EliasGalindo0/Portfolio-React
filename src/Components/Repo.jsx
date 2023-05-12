@@ -11,7 +11,7 @@ export default function Repositories() {
       <div
         onClick={ toogleRepo }
       >
-        {showRepo ? <h1>Repositories ⏬</h1> : <h1>Repositories ⏫</h1>}
+        {showRepo ? <h1>Projects ⏬</h1> : <h1>Projects ⏫</h1>}
       </div>
       {!showRepo ? (
         <div className="repo">
