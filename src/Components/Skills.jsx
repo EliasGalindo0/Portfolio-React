@@ -9,33 +9,11 @@ import skills from '../data/skills';
 
 export default function Skills() {
   const { tech, setTech, showSkills, toogleSkills } = useContext(Context);
+  // const foo = skills.flat();
 
   useEffect(() => {
     setTech(skills);
   }, [setTech]);
-
-  // const splitTechs = (param) => {
-  //   // console.log(Object.keys(tech[0]));
-  //   param.forEach((element) => {
-  //     const keys = Object.keys(element);
-  //     console.log(keys);
-  //     switch (keys) {
-  //       case 'languages':
-  //         console.log('vsf');
-
-  //         break;
-
-  //       default:
-  //         break;
-  //     }
-  //   });
-
-    // [[element]].map((ele) => {
-    //   if (keys === 'language') {
-    //     return console.log(ele.languages);
-    //   }
-    // }));
-  // };
 
   return (
     <>
