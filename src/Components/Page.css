@@ -279,7 +279,7 @@ button:hover {
   transform:rotateX(180deg);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   p.about {
     font-size: 1em;
   }
