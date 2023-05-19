@@ -7,8 +7,7 @@ import Skills from '../Components/Skills';
 
 export default function Home() {
   return (
-    <div className="home">
-      <h2 className="name">Elias Pires Abrão Galindo</h2>
+    <section className="home">
       <a
         target="_blank"
         rel="noreferrer"
@@ -35,7 +34,6 @@ export default function Home() {
           <h1>Login</h1>
         </Link>
       </main>
-      <span>All rights reserved ©</span>
-    </div>
+    </section>
   );
 }

@@ -1,4 +1,4 @@
-import treinaweb from '../certificates/Treinaweb.png';
+import treinaweb from './certificates/Treinaweb.png';
 
 const certificates = [
   { name: 'Web Development', url: 'https://www.credential.net/1cd7f5ef-b83e-41b2-a1b3-1bd691f45c00#gs.xt2vs0', src: 'https://templates.images.credential.net/16784856051955472004115750335089.png' },
