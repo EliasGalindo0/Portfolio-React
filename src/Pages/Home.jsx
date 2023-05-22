@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import About from '../Components/About';
 import Repositories from '../Components/Repo';
 import Social from '../Components/Social';
@@ -24,12 +25,14 @@ export default function Home() {
         <Social />
         <Skills />
         <div className="achiv-btn">
-          <a href="/achievements/">
+          <Link to="/achievements">
+            {' '}
             <h1>Achievements 🏆</h1>
-          </a>
-          <a href="/signin/">
+          </Link>
+          <Link to="/signin">
+            {' '}
             <h1>Login</h1>
-          </a>
+          </Link>
 
         </div>
       </main>
