@@ -21,18 +21,18 @@ export default function Skills() {
       {showSkills ? <h1>Skills ⏬</h1> : <h1>Skills ⏫</h1>}
     </div>
       { !showSkills
-        ? <div className="skills">
+        ? <section className="skills">
               {tech.map((tec) => (
-                <section className="card" key={ Math.random() }>
+                <div className="card" key={ Math.random() }>
                     <img
                       className="tech-img"
                       src={ tec.URL }
                       alt={ tec.name }
                     />
                     <p className="name">{ tec.name }</p>
-                </section>
+                </div>
                 ))}
-          </div>
+          </section>
         : null }
     </>
   );

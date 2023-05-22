@@ -14,7 +14,7 @@ export default function Repositories() {
         {showRepo ? <h1>Projects ⏬</h1> : <h1>Projects ⏫</h1>}
       </div>
       {!showRepo ? (
-        <div className="repo">
+        <section className="repo">
           <div className="card">
             <a
               target="_blank"
@@ -29,7 +29,7 @@ export default function Repositories() {
             </a>
             <p className="name">GitHub</p>
           </div>
-        </div>
+        </section>
       ) : null}
     </>
   );

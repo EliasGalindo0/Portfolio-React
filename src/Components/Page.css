@@ -119,6 +119,7 @@ p.name {
   flex-direction: row;
   flex-wrap: wrap;
   width: 70rem;
+  padding: 1rem;
 }
 
 .btn-home-return {
@@ -257,6 +258,11 @@ button:hover {
    font-size: 0.6rem;
   }
 
+  .skills, .projects, .certificates {
+    width: 25rem;
+    padding: 1rem;
+  }
+  
   .certificate, .project {
     max-width: 100px;
     max-height: 70px;

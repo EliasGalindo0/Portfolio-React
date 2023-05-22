@@ -15,7 +15,7 @@ export default function Social() {
       </div>
       {
         !showSocial
-          ? <div className="social">
+          ? <section className="social">
             <div className="card">
               <a
                 target="_blank"
@@ -72,7 +72,7 @@ export default function Social() {
               </a>
               <p className="name">Gmail</p>
             </div>
-          </div>
+          </section>
           : null
       }
     </>
