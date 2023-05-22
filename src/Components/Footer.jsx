@@ -18,9 +18,9 @@ export default function Footer() {
       } }
     >
       <div className="btn-home-return">
-        <h1 type="button">Back to top ⏫</h1>
+        <h1>Back to top ⏫</h1>
         <a href="/Portfolio-React/">
-          <h1 type="button">Return to Home 🔙</h1>
+          <h1>Return to Home 🔙</h1>
         </a>
       </div>
     </div>

@@ -4,7 +4,7 @@ import front from '../../data/front';
 export default function Basics() {
   return (
     <>
-      <h1>Front-end 🖥</h1>
+      <h1>Front-End 🖥</h1>
       <div className="projects">
         {front.map((project, index) => (
           <div key={ index }>

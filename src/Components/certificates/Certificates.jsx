@@ -6,20 +6,20 @@ export default function Certificates() {
     <>
       <h1>Certificates 📜</h1>
       <div className="certificates">
-        {certificates.map((project, index) => (
-          <div key={ index }>
+        {certificates.map((certificate) => (
+          <div key={ certificate.name }>
             <a
               target="_blank"
+              href={ certificate.url }
               rel="noreferrer"
-              href={ project.url }
             >
               <img
                 className="certificate"
-                src={ project.src }
-                alt="lessonsLearned"
+                src={ certificate.src }
+                alt={ certificate.name }
               />
             </a>
-            <p className="name">{project.name}</p>
+            <p className="name">{certificate.name}</p>
           </div>
         ))}
       </div>
