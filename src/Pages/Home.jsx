@@ -24,17 +24,14 @@ export default function Home() {
         <Repositories />
         <Social />
         <Skills />
-        <div className="achiv-btn">
-          <Link to="/achievements">
-            {' '}
-            <h1>Achievements 🏆</h1>
-          </Link>
-          <Link to="/signin">
-            {' '}
-            <h1>Login</h1>
-          </Link>
-
-        </div>
+        <Link to="/achievements">
+          {' '}
+          <h1>Achievements 🏆</h1>
+        </Link>
+        <Link to="/signin">
+          {' '}
+          <h1>Login</h1>
+        </Link>
       </main>
     </section>
   );

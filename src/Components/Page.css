@@ -64,6 +64,11 @@ p {
   font-size: 25px;
 }
 
+.components {
+  display: flex;
+  flex-direction: column;
+}
+
 p.about {
   padding: 20px;
 }
@@ -116,14 +121,14 @@ p.name {
 .skills, .projects, .certificates, .repo, .social {
   display: flex;
   justify-content: center;
-  flex-direction: row;
   flex-wrap: wrap;
-  width: 70rem;
-  padding: 1rem;
+  max-width: 70rem;
+  margin: 1rem;
+  padding: 0.2rem;
 }
 
 .btn-home-return {
-  margin: 0 15rem 0 15rem;
+  margin: 1rem 15rem 1rem 15rem;
   padding: 0.2rem;
 }
 
@@ -223,9 +228,14 @@ button:hover {
   transform:rotateX(180deg);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   p.about {
     font-size: 1em;
+  }
+
+  .home {
+    margin-top: 1rem;
+    display: flex;
   }
 
   .profile-img {
@@ -235,8 +245,8 @@ button:hover {
   }
 
   .tech-img {
-    max-width: 40px;
-    max-height: 40px;
+    width: 40px;
+    height: 40px;
   }
 
   .btn-home-return {
@@ -246,6 +256,7 @@ button:hover {
 
   h1 {
     font-size: 1.5em;
+    max-width: 90%;
   }
 
   h2.name {
@@ -256,11 +267,6 @@ button:hover {
   p.name {
    margin-bottom: 0.5rem;
    font-size: 0.6rem;
-  }
-
-  .skills, .projects, .certificates {
-    width: 25rem;
-    padding: 1rem;
   }
   
   .certificate, .project {

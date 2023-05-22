@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-React/static/css/main.df58acaa.css",
-    "main.js": "/Portfolio-React/static/js/main.aaf1b3c4.js",
+    "main.css": "/Portfolio-React/static/css/main.afb97265.css",
+    "main.js": "/Portfolio-React/static/js/main.3832745b.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio-React/static/js/787.1ed0c42c.chunk.js",
     "static/media/recipeApp.gif": "/Portfolio-React/static/media/recipeApp.9bedd6a6d0737330fc25.gif",
     "static/media/planets.gif": "/Portfolio-React/static/media/planets.c623a08e83d559cee01c.gif",
@@ -21,12 +21,12 @@
     "static/media/lessonsLearned.gif": "/Portfolio-React/static/media/lessonsLearned.791ef8554fbd75f98b6f.gif",
     "static/media/misteryLetter.gif": "/Portfolio-React/static/media/misteryLetter.54b22a252796612d0dd9.gif",
     "index.html": "/Portfolio-React/index.html",
-    "main.df58acaa.css.map": "/Portfolio-React/static/css/main.df58acaa.css.map",
-    "main.aaf1b3c4.js.map": "/Portfolio-React/static/js/main.aaf1b3c4.js.map",
+    "main.afb97265.css.map": "/Portfolio-React/static/css/main.afb97265.css.map",
+    "main.3832745b.js.map": "/Portfolio-React/static/js/main.3832745b.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio-React/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.df58acaa.css",
-    "static/js/main.aaf1b3c4.js"
+    "static/css/main.afb97265.css",
+    "static/js/main.3832745b.js"
   ]
 }
