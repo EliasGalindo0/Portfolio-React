@@ -76,13 +76,24 @@ function Login() {
           )
           : null
       }
-      <button
-        data-testid="login__login_btn"
-        type="submit"
-        onClick={ (event) => login(event) }
-      >
-        Entrar
-      </button>
+      <div className="login-btn">
+        <button
+          data-testid="login__login_btn"
+          type="submit"
+          onClick={ (event) => login(event) }
+        >
+          Login
+        </button>
+        <a href="/Portfolio-React/">
+          <button
+            data-testid="login__login_btn"
+            type="button"
+          >
+            Back to Home
+          </button>
+
+        </a>
+      </div>
     </form>
   );
 }

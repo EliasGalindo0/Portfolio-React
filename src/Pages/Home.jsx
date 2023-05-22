@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import About from '../Components/About';
-import Repositories from '../Components/Repo';
 import Social from '../Components/Social';
 import Skills from '../Components/Skills';
 
@@ -9,9 +8,8 @@ export default function Home() {
   return (
     <section className="home">
       <a
-        target="_blank"
         rel="noreferrer"
-        href="https://www.linkedin.com/in/eliasgalindo/"
+        href="/signin/"
       >
         <img
           className="profile-img"
@@ -21,16 +19,11 @@ export default function Home() {
       </a>
       <main className="components">
         <About />
-        <Repositories />
         <Social />
         <Skills />
         <Link to="/achievements">
           {' '}
           <h1>Achievements 🏆</h1>
-        </Link>
-        <Link to="/signin">
-          {' '}
-          <h1>Login</h1>
         </Link>
       </main>
     </section>

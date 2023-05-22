@@ -20,6 +20,20 @@ export default function Social() {
               <a
                 target="_blank"
                 rel="noreferrer"
+                href="https://github.com/EliasGalindo0"
+              >
+                <img
+                  className="tech-img"
+                  src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                  alt="GitHub"
+                />
+              </a>
+              <p className="name">GitHub</p>
+            </div>
+            <div className="card">
+              <a
+                target="_blank"
+                rel="noreferrer"
                 href="https://www.linkedin.com/in/eliasgalindo/"
               >
                 <img
