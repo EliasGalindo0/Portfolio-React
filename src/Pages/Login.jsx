@@ -41,8 +41,8 @@ function Login() {
   if (isLogged) return <Navigate to="/achievements" />;
 
   return (
-    <form className="form">
-      <h3>ADMIN</h3>
+    <form className="home">
+      <h1>ADMIN</h1>
       <label htmlFor="email-input">
         <input
           className="login__login_input"
