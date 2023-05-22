@@ -7,16 +7,13 @@ import Skills from '../Components/Skills';
 export default function Home() {
   return (
     <section className="home">
-      <a
-        rel="noreferrer"
-        href="/signin/"
-      >
+      <Link to="/signin">
         <img
           className="profile-img"
           src="https://avatars.githubusercontent.com/u/90291253?v=4"
           alt="GitHub Avatar"
         />
-      </a>
+      </Link>
       <main className="components">
         <About />
         <Social />
