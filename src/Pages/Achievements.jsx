@@ -11,9 +11,6 @@ export default function Projects() {
       <Front />
       <Certificates />
       <Footer />
-      <div>
-        <span>All rights reserved ©</span>
-      </div>
     </div>
   );
 }

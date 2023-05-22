@@ -1,12 +1,12 @@
-import lessonsImg from '../projects/lessonsLearned.gif';
-import colorGuessImg from '../projects/colorguess.gif';
-import unitImg from '../projects/unitTests.png';
-import memeGenImg from '../projects/memeGenerator.gif';
-import misteryLetImg from '../projects/misteryLetter.gif';
-import playgroundImg from '../projects/playgroundFunction.png';
-import pixelsImg from '../projects/pixelArt.gif';
-import shoppingImg from '../projects/shoppingCart.gif';
-import todoImg from '../projects/toDoList.gif';
+import lessonsImg from './projects/lessonsLearned.gif';
+import colorGuessImg from './projects/colorguess.gif';
+import unitImg from './projects/unitTests.png';
+import memeGenImg from './projects/memeGenerator.gif';
+import misteryLetImg from './projects/misteryLetter.gif';
+import playgroundImg from './projects/playgroundFunction.png';
+import pixelsImg from './projects/pixelArt.gif';
+import shoppingImg from './projects/shoppingCart.gif';
+import todoImg from './projects/toDoList.gif';
 
 const projects = [
   { name: 'Color Guess', url: 'https://github.com/EliasGalindo0/project-color-guess', image: colorGuessImg },

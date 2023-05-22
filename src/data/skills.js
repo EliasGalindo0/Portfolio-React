@@ -30,7 +30,7 @@ const skills = [
   { type: 'tools', name: 'Figma', URL: 'https://upload.wikimedia.org/wikipedia/commons/a/ad/Figma-1-logo.png' },
 
   { type: 'db', name: 'MySQL', URL: 'https://www.freepnglogos.com/uploads/logo-mysql-png/logo-mysql-mysql-logo-png-images-are-download-crazypng-21.png' },
-  { type: 'db', name: 'MongoDB', URL: 'https://w1.pngwing.com/pngs/711/379/png-transparent-green-grass-mongodb-database-documentoriented-database-dashboard-nosql-bson-javascript.png' },
+  { type: 'db', name: 'MongoDB', URL: 'https://1000logos.net/wp-content/uploads/2020/08/MongoDB-Emblem.jpg' },
 ];
 
 export default skills;

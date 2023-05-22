@@ -4,12 +4,10 @@ import About from '../Components/About';
 import Repositories from '../Components/Repo';
 import Social from '../Components/Social';
 import Skills from '../Components/Skills';
-import Footer from '../Components/Footer';
 
 export default function Home() {
   return (
-    <div className="home">
-      <h2 className="name">Elias Pires Abrão Galindo</h2>
+    <section className="home">
       <a
         target="_blank"
         rel="noreferrer"
@@ -35,9 +33,7 @@ export default function Home() {
           {' '}
           <h1>Login</h1>
         </Link>
-        <Footer />
       </main>
-      <span>All rights reserved ©</span>
-    </div>
+    </section>
   );
 }

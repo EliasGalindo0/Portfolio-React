@@ -1,29 +1,33 @@
 {
   "files": {
-    "main.css": "/Portfolio-React/static/css/main.e378768a.css",
-    "main.js": "/Portfolio-React/static/js/main.333937ac.js",
+    "main.css": "/Portfolio-React/static/css/main.5429d492.css",
+    "main.js": "/Portfolio-React/static/js/main.5080d6be.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio-React/static/js/787.1ed0c42c.chunk.js",
     "static/media/recipeApp.gif": "/Portfolio-React/static/media/recipeApp.9bedd6a6d0737330fc25.gif",
     "static/media/planets.gif": "/Portfolio-React/static/media/planets.c623a08e83d559cee01c.gif",
+    "static/media/starwars.gif": "/Portfolio-React/static/media/starwars.808ec087400f56ec8fcd.gif",
+    "static/media/trybetunes.gif": "/Portfolio-React/static/media/trybetunes.4b852eb02df775439ba5.gif",
     "static/media/shoppingCart.gif": "/Portfolio-React/static/media/shoppingCart.be0ef7831233c9369522.gif",
     "static/media/colorguess.gif": "/Portfolio-React/static/media/colorguess.0125907c8b4d76e88c41.gif",
     "static/media/toDoList.gif": "/Portfolio-React/static/media/toDoList.2a0f06504b201b6854de.gif",
     "static/media/frontStore.gif": "/Portfolio-React/static/media/frontStore.201b188362539af941b9.gif",
+    "static/media/trivia.gif": "/Portfolio-React/static/media/trivia.08bcc0509798d850d101.gif",
     "static/media/Treinaweb.png": "/Portfolio-React/static/media/Treinaweb.ab5e8ce8ff74366da710.png",
     "static/media/memeGenerator.gif": "/Portfolio-React/static/media/memeGenerator.d49bab1a354b6f8c7962.gif",
     "static/media/unitTests.png": "/Portfolio-React/static/media/unitTests.7585e38f5cd81f43e880.png",
     "static/media/playgroundFunction.png": "/Portfolio-React/static/media/playgroundFunction.e4d2cd81faf5c1286d49.png",
     "static/media/rtl-test.gif": "/Portfolio-React/static/media/rtl-test.ee731da3c0a39a8190b9.gif",
+    "static/media/trybewallet.gif": "/Portfolio-React/static/media/trybewallet.fe3506419980f5d8e7ef.gif",
     "static/media/pixelArt.gif": "/Portfolio-React/static/media/pixelArt.53efca23a5abb01befc8.gif",
     "static/media/lessonsLearned.gif": "/Portfolio-React/static/media/lessonsLearned.791ef8554fbd75f98b6f.gif",
     "static/media/misteryLetter.gif": "/Portfolio-React/static/media/misteryLetter.54b22a252796612d0dd9.gif",
     "index.html": "/Portfolio-React/index.html",
-    "main.e378768a.css.map": "/Portfolio-React/static/css/main.e378768a.css.map",
-    "main.333937ac.js.map": "/Portfolio-React/static/js/main.333937ac.js.map",
+    "main.5429d492.css.map": "/Portfolio-React/static/css/main.5429d492.css.map",
+    "main.5080d6be.js.map": "/Portfolio-React/static/js/main.5080d6be.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio-React/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e378768a.css",
-    "static/js/main.333937ac.js"
+    "static/css/main.5429d492.css",
+    "static/js/main.5080d6be.js"
   ]
 }
