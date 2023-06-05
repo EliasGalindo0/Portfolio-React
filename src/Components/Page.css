@@ -276,6 +276,10 @@ button:hover {
   .skills {
     margin: 0 1rem 0 1rem;
   }
+
+  .card {
+    padding: 5px;
+  }
   
   .certificate, .project {
     width: 100px;
