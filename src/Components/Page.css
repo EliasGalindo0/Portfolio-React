@@ -71,6 +71,8 @@ p {
 
 p.about {
   padding: 20px;
+  text-align: justify;
+  margin: 0 2rem 0 2rem;
 }
 
 .profile-img {
@@ -79,8 +81,8 @@ p.about {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   margin: 10px;
-  max-width: 200px;
-  max-height: 200px;
+  width: 200px;
+  height: 200px;
 }
 
 .profile-img:hover {
@@ -122,9 +124,10 @@ p.name {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 70rem;
-  margin: 1rem;
-  padding: 0.2rem;
+}
+
+.skills {
+  margin: 0 3rem 0 3rem;
 }
 
 .btn-home-return {
@@ -257,7 +260,7 @@ button:hover {
 
   h1 {
     font-size: 1.5em;
-    max-width: 90%;
+    mwidth: 90%;
   }
 
   h2.name {
@@ -270,9 +273,13 @@ button:hover {
    font-size: 0.6rem;
   }
   
+  .skills {
+    margin: 0 1rem 0 1rem;
+  }
+  
   .certificate, .project {
-    max-width: 100px;
-    max-height: 70px;
+    width: 100px;
+    height: 70px;
     margin: 0.2rem;
     padding: 2px;
   }
