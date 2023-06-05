@@ -64,6 +64,11 @@ p {
   font-size: 25px;
 }
 
+.components {
+  display: flex;
+  flex-direction: column;
+}
+
 p.about {
   padding: 20px;
 }
@@ -113,16 +118,17 @@ p.name {
   font-size: 1.5em;
 }
 
-.skills, .projects, .certificates, .repo, .social {
+.skills, .projects, .certificates, .social {
   display: flex;
   justify-content: center;
-  flex-direction: row;
   flex-wrap: wrap;
-  width: 70rem;
+  max-width: 70rem;
+  margin: 1rem;
+  padding: 0.2rem;
 }
 
 .btn-home-return {
-  margin: 0 15rem 0 15rem;
+  margin: 1rem 15rem 1rem 15rem;
   padding: 0.2rem;
 }
 
@@ -192,13 +198,14 @@ h3, button {
 }
 
 button {
-  font-size: 2rem;
+  font-size: 1rem;
   margin: 0.3rem;
+  padding: 0.3rem;
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  width: 50%;
+  /* width: 50%; */
   align-self: center;
 }
 
@@ -222,9 +229,14 @@ button:hover {
   transform:rotateX(180deg);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   p.about {
     font-size: 1em;
+  }
+
+  .home {
+    margin-top: 1rem;
+    display: flex;
   }
 
   .profile-img {
@@ -234,8 +246,8 @@ button:hover {
   }
 
   .tech-img {
-    max-width: 40px;
-    max-height: 40px;
+    width: 40px;
+    height: 40px;
   }
 
   .btn-home-return {
@@ -245,6 +257,7 @@ button:hover {
 
   h1 {
     font-size: 1.5em;
+    max-width: 90%;
   }
 
   h2.name {
@@ -256,7 +269,7 @@ button:hover {
    margin-bottom: 0.5rem;
    font-size: 0.6rem;
   }
-
+  
   .certificate, .project {
     max-width: 100px;
     max-height: 70px;
