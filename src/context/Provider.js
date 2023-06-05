@@ -6,16 +6,11 @@ import Context from './Context';
 function Provider({ children }) {
   const [tech, setTech] = React.useState([]);
   const [showAbout, setShowAbout] = React.useState('false');
-  const [showRepo, setShowRepo] = React.useState('false');
   const [showSocial, setShowSocial] = React.useState('false');
   const [showSkills, setShowSkills] = React.useState('false');
 
   const toogleAbout = () => {
     setShowAbout(!showAbout);
-  };
-
-  const toogleRepo = () => {
-    setShowRepo(!showRepo);
   };
 
   const toogleSocial = () => {
@@ -37,20 +32,16 @@ function Provider({ children }) {
     tech,
     setTech,
     showAbout,
-    showRepo,
     showSocial,
     showSkills,
     toogleAbout,
-    toogleRepo,
     toogleSocial,
     toogleSkills,
     resetAllToogles,
   }), [showAbout,
-    showRepo,
     showSocial,
     showSkills,
     toogleAbout,
-    toogleRepo,
     toogleSocial,
     toogleSkills,
     tech]);
