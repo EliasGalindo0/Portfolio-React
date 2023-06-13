@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-React/static/css/main.e384df79.css",
-    "main.js": "/Portfolio-React/static/js/main.7eb0df65.js",
+    "main.css": "/Portfolio-React/static/css/main.cb67df36.css",
+    "main.js": "/Portfolio-React/static/js/main.67f28961.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio-React/static/js/787.1ed0c42c.chunk.js",
     "static/media/recipeApp.gif": "/Portfolio-React/static/media/recipeApp.9bedd6a6d0737330fc25.gif",
     "static/media/planets.gif": "/Portfolio-React/static/media/planets.c623a08e83d559cee01c.gif",
@@ -12,6 +12,7 @@
     "static/media/toDoList.gif": "/Portfolio-React/static/media/toDoList.2a0f06504b201b6854de.gif",
     "static/media/frontStore.gif": "/Portfolio-React/static/media/frontStore.201b188362539af941b9.gif",
     "static/media/trivia.gif": "/Portfolio-React/static/media/trivia.08bcc0509798d850d101.gif",
+    "static/media/deliveryApp.gif": "/Portfolio-React/static/media/deliveryApp.b2d0ad9be006a057c7fb.gif",
     "static/media/memeGenerator.gif": "/Portfolio-React/static/media/memeGenerator.d49bab1a354b6f8c7962.gif",
     "static/media/unitTests.png": "/Portfolio-React/static/media/unitTests.7585e38f5cd81f43e880.png",
     "static/media/playgroundFunction.png": "/Portfolio-React/static/media/playgroundFunction.e4d2cd81faf5c1286d49.png",
@@ -21,12 +22,12 @@
     "static/media/lessonsLearned.gif": "/Portfolio-React/static/media/lessonsLearned.791ef8554fbd75f98b6f.gif",
     "static/media/misteryLetter.gif": "/Portfolio-React/static/media/misteryLetter.54b22a252796612d0dd9.gif",
     "index.html": "/Portfolio-React/index.html",
-    "main.e384df79.css.map": "/Portfolio-React/static/css/main.e384df79.css.map",
-    "main.7eb0df65.js.map": "/Portfolio-React/static/js/main.7eb0df65.js.map",
+    "main.cb67df36.css.map": "/Portfolio-React/static/css/main.cb67df36.css.map",
+    "main.67f28961.js.map": "/Portfolio-React/static/js/main.67f28961.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio-React/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e384df79.css",
-    "static/js/main.7eb0df65.js"
+    "static/css/main.cb67df36.css",
+    "static/js/main.67f28961.js"
   ]
 }
