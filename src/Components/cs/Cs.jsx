@@ -1,12 +1,12 @@
 import React from 'react';
-import front from '../../data/front';
+import cs from '../../data/cs';
 
-export default function Basics() {
+export default function Cs() {
   return (
     <>
-      <h1>Front-End 🖥</h1>
-      <div className="projects" id="front">
-        {front.map((project, index) => (
+      <h1>Computer Science 🔬</h1>
+      <div className="projects" id="cs">
+        {cs.map((project, index) => (
           <div key={ index }>
             <a
               target="_blank"
