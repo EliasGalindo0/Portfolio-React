@@ -126,6 +126,16 @@ p.name {
   flex-wrap: wrap;
 }
 
+#basics, #front, #back, #cs {
+  width: 70rem;
+}
+#back img, #cs img {
+  width: 200px;
+  height: 150px;
+  padding: 4px;
+  margin: 8px;
+}
+
 .skills {
   margin: 0 3rem 0 3rem;
 }
@@ -260,7 +270,7 @@ button:hover {
 
   h1 {
     font-size: 1.5em;
-    mwidth: 90%;
+    width: 90%;
   }
 
   h2.name {
@@ -286,5 +296,14 @@ button:hover {
     height: 70px;
     margin: 0.2rem;
     padding: 2px;
+  }
+  #basics, #front, #back, #cs {
+    width: 25rem;
+  }
+  #back img, #cs img {
+    width: 100px;
+    height: 70px;
+    padding: 4px;
+    margin: 8px;
   }
 }

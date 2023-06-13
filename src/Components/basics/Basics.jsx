@@ -5,7 +5,7 @@ export default function Basics() {
   return (
     <>
       <h1>Web Fundamentals 🚧</h1>
-      <div className="projects">
+      <div className="projects" id="basics">
         {projects.map((project, index) => (
           <div key={ index }>
             <a
